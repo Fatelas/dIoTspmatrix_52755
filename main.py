@@ -1,16 +1,45 @@
-# This is a sample Python script.
+import pytest
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+from position import *
 
+def test_position_create_valid_1_2():
+    assert position_create(1,2) is not None
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+def test_position_create_valid_1000_0():
+    assert position_create(1000,0) is not None
 
+def test_position_create_invalid_args_minus1():
+    try:
+        position_create(-1, -1)
+    except ValueError as error:
+        assert str(error) == 'position_create: invalid arguments'
 
-# Press the green button in the gutter to run the script.
+def test_position_create_invalid_args_emptytuple():
+    try:
+        position_create((), ())
+    except ValueError as error:
+        assert str(error) == 'position_create: invalid arguments'
+
+def test_position_is_true():
+    assert position_is(position_create(1, 2)) is True
+
+def test_position_is_false():
+    assert position_is(1.2) is False
+
+def test_position_row():
+    assert position_row(position_create(1, 2)) == 1
+
+def test_position_col():
+    assert position_col(position_create(1, 2)) == 2
+
+def test_position_equal_same():
+    assert position_equal(position_create(1, 2), position_create(1, 2)) is True
+
+def test_position_equal_different():
+    assert position_equal(position_create(1, 2), position_create(2, 1)) is False
+
+def test_position_str():
+    assert position_str(position_create(1, 2)) == '(1, 2)'
+
 if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+    pytest.main()

@@ -6,24 +6,24 @@ def position_create(row:int, col:int) -> position :
     return row, col
 
 def position_is(pos: position) -> bool :
-    if type(pos) is position :
+    if type(pos) is tuple and type(pos[0]) is int and type(pos[1]) is int:
         return True
     else :
         return False
 
 def position_row(pos: position) -> int :
-    if type(pos) is position :
+    if position_is(pos):
         return pos[0]
     else : raise ValueError('position_row: invalid arguments')
 
 def position_col(pos: position) -> int :
-    if type(pos) is position :
+    if position_is(pos):
         return pos[1]
     else : raise ValueError('position_col: invalid arguments')
 
 def  position_equal(pos1: position, pos2: position) -> bool :
-    if type(pos1) is position and type(pos2) is position :
-        if pos1 == pos2 :
+    if position_is(pos1) and position_is(pos2):
+        if pos1 == pos2:
             return True
         else:
             return False
@@ -31,8 +31,8 @@ def  position_equal(pos1: position, pos2: position) -> bool :
         raise ValueError('position_equal: invalid arguments')
 
 def position_str(pos: position) -> str :
-    if type(pos) is position :
-        return '(' + pos[0] + ',' + pos[1] + ')'
+    if position_is(pos) :
+        return '(' + str(pos[0]) + ', ' + str(pos[1]) + ')'
     else :
         raise ValueError('position_str: invalid arguments')
 
