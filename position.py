@@ -1,4 +1,4 @@
-position = tuple[int, int]
+position = tuple[int, int] 
 
 
 def position_create(row: int, col: int) -> position:
