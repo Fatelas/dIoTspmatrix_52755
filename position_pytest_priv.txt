@@ -1,29 +1,29 @@
 ============================= test session starts ==============================
 collecting ... collected 23 items
 
-position_pytest_priv.py::test_position_01 PASSED
-position_pytest_priv.py::test_position_02 PASSED
-position_pytest_priv.py::test_position_03 PASSED
-position_pytest_priv.py::test_position_04 PASSED
-position_pytest_priv.py::test_position_05 PASSED
-position_pytest_priv.py::test_position_06 PASSED
-position_pytest_priv.py::test_position_07 PASSED
-position_pytest_priv.py::test_position_08 PASSED
-position_pytest_priv.py::test_position_09 PASSED
-position_pytest_priv.py::test_position_10 PASSED
-position_pytest_priv.py::test_position_11 PASSED
-position_pytest_priv.py::test_position_12 PASSED
-position_pytest_priv.py::test_position_13 PASSED
-position_pytest_priv.py::test_position_14 FAILED
-position_pytest_priv.py::test_position_15 FAILED
-position_pytest_priv.py::test_position_16 PASSED
-position_pytest_priv.py::test_position_17 FAILED
-position_pytest_priv.py::test_position_18 FAILED
-position_pytest_priv.py::test_position_19 FAILED
-position_pytest_priv.py::test_position_20 PASSED
-position_pytest_priv.py::test_position_21 PASSED
-position_pytest_priv.py::test_position_22 PASSED
-position_pytest_priv.py::test_position_23 PASSED
+position_pytest_priv.py::test_position_01 PASSED                         [  4%]
+position_pytest_priv.py::test_position_02 PASSED                         [  8%]
+position_pytest_priv.py::test_position_03 PASSED                         [ 13%]
+position_pytest_priv.py::test_position_04 PASSED                         [ 17%]
+position_pytest_priv.py::test_position_05 PASSED                         [ 21%]
+position_pytest_priv.py::test_position_06 PASSED                         [ 26%]
+position_pytest_priv.py::test_position_07 PASSED                         [ 30%]
+position_pytest_priv.py::test_position_08 PASSED                         [ 34%]
+position_pytest_priv.py::test_position_09 PASSED                         [ 39%]
+position_pytest_priv.py::test_position_10 PASSED                         [ 43%]
+position_pytest_priv.py::test_position_11 PASSED                         [ 47%]
+position_pytest_priv.py::test_position_12 PASSED                         [ 52%]
+position_pytest_priv.py::test_position_13 PASSED                         [ 56%]
+position_pytest_priv.py::test_position_14 FAILED                         [ 60%]
+position_pytest_priv.py::test_position_15 FAILED                         [ 65%]
+position_pytest_priv.py::test_position_16 PASSED                         [ 69%]
+position_pytest_priv.py::test_position_17 FAILED                         [ 73%]
+position_pytest_priv.py::test_position_18 FAILED                         [ 78%]
+position_pytest_priv.py::test_position_19 FAILED                         [ 82%]
+position_pytest_priv.py::test_position_20 PASSED                         [ 86%]
+position_pytest_priv.py::test_position_21 PASSED                         [ 91%]
+position_pytest_priv.py::test_position_22 PASSED                         [ 95%]
+position_pytest_priv.py::test_position_23 PASSED                         [100%]
 
 ============================== slowest durations ===============================
 
