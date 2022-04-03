@@ -1,31 +1,31 @@
-[1m============================= test session starts ==============================[0m
-[1mcollecting ... [0mcollected 23 items
+============================= test session starts ==============================
+collecting ... collected 23 items
 
-position_pytest_priv.py::test_position_01 [32mPASSED[0m
-position_pytest_priv.py::test_position_02 [32mPASSED[0m
-position_pytest_priv.py::test_position_03 [32mPASSED[0m
-position_pytest_priv.py::test_position_04 [32mPASSED[0m
-position_pytest_priv.py::test_position_05 [31mFAILED[0m
-position_pytest_priv.py::test_position_06 [32mPASSED[0m
-position_pytest_priv.py::test_position_07 [32mPASSED[0m
-position_pytest_priv.py::test_position_08 [32mPASSED[0m
-position_pytest_priv.py::test_position_09 [32mPASSED[0m
-position_pytest_priv.py::test_position_10 [32mPASSED[0m
-position_pytest_priv.py::test_position_11 [32mPASSED[0m
-position_pytest_priv.py::test_position_12 [32mPASSED[0m
-position_pytest_priv.py::test_position_13 [32mPASSED[0m
-position_pytest_priv.py::test_position_14 [31mFAILED[0m
-position_pytest_priv.py::test_position_15 [31mFAILED[0m
-position_pytest_priv.py::test_position_16 [32mPASSED[0m
-position_pytest_priv.py::test_position_17 [31mFAILED[0m
-position_pytest_priv.py::test_position_18 [31mFAILED[0m
-position_pytest_priv.py::test_position_19 [31mFAILED[0m
-position_pytest_priv.py::test_position_20 [32mPASSED[0m
-position_pytest_priv.py::test_position_21 [32mPASSED[0m
-position_pytest_priv.py::test_position_22 [32mPASSED[0m
-position_pytest_priv.py::test_position_23 [32mPASSED[0m
+position_pytest_priv.py::test_position_01 PASSED                         [  4%]
+position_pytest_priv.py::test_position_02 PASSED                         [  8%]
+position_pytest_priv.py::test_position_03 PASSED                         [ 13%]
+position_pytest_priv.py::test_position_04 PASSED                         [ 17%]
+position_pytest_priv.py::test_position_05 PASSED                         [ 21%]
+position_pytest_priv.py::test_position_06 PASSED                         [ 26%]
+position_pytest_priv.py::test_position_07 PASSED                         [ 30%]
+position_pytest_priv.py::test_position_08 PASSED                         [ 34%]
+position_pytest_priv.py::test_position_09 PASSED                         [ 39%]
+position_pytest_priv.py::test_position_10 PASSED                         [ 43%]
+position_pytest_priv.py::test_position_11 PASSED                         [ 47%]
+position_pytest_priv.py::test_position_12 PASSED                         [ 52%]
+position_pytest_priv.py::test_position_13 PASSED                         [ 56%]
+position_pytest_priv.py::test_position_14 FAILED                         [ 60%]
+position_pytest_priv.py::test_position_15 FAILED                         [ 65%]
+position_pytest_priv.py::test_position_16 PASSED                         [ 69%]
+position_pytest_priv.py::test_position_17 FAILED                         [ 73%]
+position_pytest_priv.py::test_position_18 FAILED                         [ 78%]
+position_pytest_priv.py::test_position_19 FAILED                         [ 82%]
+position_pytest_priv.py::test_position_20 PASSED                         [ 86%]
+position_pytest_priv.py::test_position_21 PASSED                         [ 91%]
+position_pytest_priv.py::test_position_22 PASSED                         [ 95%]
+position_pytest_priv.py::test_position_23 PASSED                         [100%]
 
 ============================== slowest durations ===============================
 
 (69 durations < 1s hidden.  Use -vv to show these durations.)
-[31m========================= [31m[1m6 failed[0m, [32m17 passed[0m[31m in 0.01s[0m[31m =========================[0m
+========================= 5 failed, 18 passed in 0.01s =========================
