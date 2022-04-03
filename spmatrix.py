@@ -1,6 +1,6 @@
 from position import *
 
-spmatrix = [float, dict()]
+spmatrix = list[float, dict()]
 
 
 def spmatrix_create(zero: float = 0.0) -> spmatrix:

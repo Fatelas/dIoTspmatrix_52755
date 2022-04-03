@@ -40,6 +40,6 @@ def position_equal(pos1: position, pos2: position) -> bool:
 
 def position_str(pos: position) -> str:
     if position_is(pos):
-        return '(' + str(pos[0]) + ', ' + str(pos[1]) + ')'
+        return '(' + str(position_row(pos)) + ', ' + str(position_col(pos)) + ')'
     else:
         raise ValueError('position_str: invalid arguments')
