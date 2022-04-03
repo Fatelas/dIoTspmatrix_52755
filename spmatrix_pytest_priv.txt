@@ -1,5 +1,54 @@
 ============================= test session starts ==============================
-collecting ... collected 0 items / 1 error
+collecting ... collected 46 items
 
-!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
-=============================== 1 error in 0.02s ===============================
+spmatrix_pytest_priv.py::test_01 PASSED                                  [  2%]
+spmatrix_pytest_priv.py::test_02 FAILED                                  [  4%]
+spmatrix_pytest_priv.py::test_03 PASSED                                  [  6%]
+spmatrix_pytest_priv.py::test_04 PASSED                                  [  8%]
+spmatrix_pytest_priv.py::test_05 PASSED                                  [ 10%]
+spmatrix_pytest_priv.py::test_06 PASSED                                  [ 13%]
+spmatrix_pytest_priv.py::test_07 PASSED                                  [ 15%]
+spmatrix_pytest_priv.py::test_08 PASSED                                  [ 17%]
+spmatrix_pytest_priv.py::test_09 PASSED                                  [ 19%]
+spmatrix_pytest_priv.py::test_10 PASSED                                  [ 21%]
+spmatrix_pytest_priv.py::test_11 PASSED                                  [ 23%]
+spmatrix_pytest_priv.py::test_12 PASSED                                  [ 26%]
+spmatrix_pytest_priv.py::test_13 PASSED                                  [ 28%]
+spmatrix_pytest_priv.py::test_14 PASSED                                  [ 30%]
+spmatrix_pytest_priv.py::test_15 PASSED                                  [ 32%]
+spmatrix_pytest_priv.py::test_16 PASSED                                  [ 34%]
+spmatrix_pytest_priv.py::test_17 PASSED                                  [ 36%]
+spmatrix_pytest_priv.py::test_18 PASSED                                  [ 39%]
+spmatrix_pytest_priv.py::test_19 PASSED                                  [ 41%]
+spmatrix_pytest_priv.py::test_20 PASSED                                  [ 43%]
+spmatrix_pytest_priv.py::test_21 PASSED                                  [ 45%]
+spmatrix_pytest_priv.py::test_22 PASSED                                  [ 47%]
+spmatrix_pytest_priv.py::test_23 PASSED                                  [ 50%]
+spmatrix_pytest_priv.py::test_24 PASSED                                  [ 52%]
+spmatrix_pytest_priv.py::test_25 PASSED                                  [ 54%]
+spmatrix_pytest_priv.py::test_26 PASSED                                  [ 56%]
+spmatrix_pytest_priv.py::test_27 FAILED                                  [ 58%]
+spmatrix_pytest_priv.py::test_28 PASSED                                  [ 60%]
+spmatrix_pytest_priv.py::test_29 PASSED                                  [ 63%]
+spmatrix_pytest_priv.py::test_30 PASSED                                  [ 65%]
+spmatrix_pytest_priv.py::test_31 FAILED                                  [ 67%]
+spmatrix_pytest_priv.py::test_32 PASSED                                  [ 69%]
+spmatrix_pytest_priv.py::test_33 PASSED                                  [ 71%]
+spmatrix_pytest_priv.py::test_34 PASSED                                  [ 73%]
+spmatrix_pytest_priv.py::test_35 PASSED                                  [ 76%]
+spmatrix_pytest_priv.py::test_36 PASSED                                  [ 78%]
+spmatrix_pytest_priv.py::test_37 PASSED                                  [ 80%]
+spmatrix_pytest_priv.py::test_38 PASSED                                  [ 82%]
+spmatrix_pytest_priv.py::test_39 PASSED                                  [ 84%]
+spmatrix_pytest_priv.py::test_40 PASSED                                  [ 86%]
+spmatrix_pytest_priv.py::test_41 FAILED                                  [ 89%]
+spmatrix_pytest_priv.py::test_42 PASSED                                  [ 91%]
+spmatrix_pytest_priv.py::test_43 FAILED                                  [ 93%]
+spmatrix_pytest_priv.py::test_44 PASSED                                  [ 95%]
+spmatrix_pytest_priv.py::test_45 PASSED                                  [ 97%]
+spmatrix_pytest_priv.py::test_46 FAILED                                  [100%]
+
+============================== slowest durations ===============================
+
+(138 durations < 1s hidden.  Use -vv to show these durations.)
+========================= 6 failed, 40 passed in 0.03s =========================
