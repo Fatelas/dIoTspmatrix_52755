@@ -8,8 +8,14 @@ def position_create(row: int, col: int) -> position:
 
 
 def position_is(pos: position) -> bool:
-    if type(pos) is tuple and type(pos[0]) is int and type(pos[1]) is int and pos[0] >= 0 and pos[1] >= 0:
-        return True
+    if type(pos) is tuple and len(pos) == 2:
+        if type(pos[0]) is int and type(pos[1]) is int:
+            if pos[0] >= 0 and pos[1] >= 0:
+                return True
+            else:
+                return False
+        else:
+            return False
     else:
         return False
 
