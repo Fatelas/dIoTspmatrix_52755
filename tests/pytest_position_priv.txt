@@ -1,0 +1,31 @@
+============================= test session starts ==============================
+collecting ... collected 23 items
+
+pytest_position_priv.py::test_position_01 PASSED                         [  4%]
+pytest_position_priv.py::test_position_02 PASSED                         [  8%]
+pytest_position_priv.py::test_position_03 PASSED                         [ 13%]
+pytest_position_priv.py::test_position_04 PASSED                         [ 17%]
+pytest_position_priv.py::test_position_05 PASSED                         [ 21%]
+pytest_position_priv.py::test_position_06 PASSED                         [ 26%]
+pytest_position_priv.py::test_position_07 PASSED                         [ 30%]
+pytest_position_priv.py::test_position_08 PASSED                         [ 34%]
+pytest_position_priv.py::test_position_09 PASSED                         [ 39%]
+pytest_position_priv.py::test_position_10 PASSED                         [ 43%]
+pytest_position_priv.py::test_position_11 PASSED                         [ 47%]
+pytest_position_priv.py::test_position_12 PASSED                         [ 52%]
+pytest_position_priv.py::test_position_13 PASSED                         [ 56%]
+pytest_position_priv.py::test_position_14 PASSED                         [ 60%]
+pytest_position_priv.py::test_position_15 PASSED                         [ 65%]
+pytest_position_priv.py::test_position_16 PASSED                         [ 69%]
+pytest_position_priv.py::test_position_17 PASSED                         [ 73%]
+pytest_position_priv.py::test_position_18 PASSED                         [ 78%]
+pytest_position_priv.py::test_position_19 PASSED                         [ 82%]
+pytest_position_priv.py::test_position_20 PASSED                         [ 86%]
+pytest_position_priv.py::test_position_21 PASSED                         [ 91%]
+pytest_position_priv.py::test_position_22 PASSED                         [ 95%]
+pytest_position_priv.py::test_position_23 PASSED                         [100%]
+
+============================== slowest durations ===============================
+
+(69 durations < 1s hidden.  Use -vv to show these durations.)
+============================== 23 passed in 0.01s ==============================

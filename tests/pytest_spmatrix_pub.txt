@@ -1,0 +1,34 @@
+============================= test session starts ==============================
+collecting ... collected 21 items
+
+pytest_spmatrix_pub.py::test_spmatrix_create_with_zero_as_default PASSED [  4%]
+pytest_spmatrix_pub.py::test_spmatrix_create_with_zero_as_1_0 PASSED     [  9%]
+pytest_spmatrix_pub.py::test_spmatrix_is_of_empty_matrix PASSED          [ 14%]
+pytest_spmatrix_pub.py::test_spmatrix_is_of_non_matrix_float_1 PASSED    [ 19%]
+pytest_spmatrix_pub.py::test_spmatrix_get_of_empty_matrix_with_zero_as_default PASSED [ 23%]
+pytest_spmatrix_pub.py::test_spmatrix_get_of_empty_matrix_with_zero_as_2 FAILED [ 28%]
+pytest_spmatrix_pub.py::test_spmatrix_copy_of_empty_matrix_with_zero_as_2 FAILED [ 33%]
+pytest_spmatrix_pub.py::test_spmatrix_is_after_spmatrix_copy_after_spmatrix_create PASSED [ 38%]
+pytest_spmatrix_pub.py::test_spmatrix_value_set_and_spmatrix_value_get PASSED [ 42%]
+pytest_spmatrix_pub.py::test_spmatrix_value_get_after_replacing_value_with_spmatrix_value_get PASSED [ 47%]
+pytest_spmatrix_pub.py::test_spmatrix_dim_of_empty_matrix PASSED         [ 52%]
+pytest_spmatrix_pub.py::test_spmatrix_dim_of_matrix_with_one_element FAILED [ 57%]
+pytest_spmatrix_pub.py::test_spmatrix_sparsity_of_m2x2_diagonal_matrix PASSED [ 61%]
+pytest_spmatrix_pub.py::test_spmatrix_sparsity_of_matrix_with_1_element_after_element_removal_using_spmatrix_zero_set FAILED [ 66%]
+pytest_spmatrix_pub.py::test_spmatrix_row_m2x2_diagonal PASSED           [ 71%]
+pytest_spmatrix_pub.py::test_spmatrix_col_m2x2_diagonal PASSED           [ 76%]
+pytest_spmatrix_pub.py::test_spmatrix_diagonal_m2x2_diagonal_zero PASSED [ 80%]
+pytest_spmatrix_pub.py::test_spmatrix_diagonal_m2x2_anti_diagonal_zero PASSED [ 85%]
+pytest_spmatrix_pub.py::test_spmatrix_15 PASSED                          [ 90%]
+pytest_spmatrix_pub.py::test_spmatrix_19 PASSED                          [ 95%]
+pytest_spmatrix_pub.py::test_spmatrix_34 PASSED                          [100%]
+
+=================================== FAILURES ===================================
+/home/dtsd/DTSD/dIoTspmatrix_52755/spmatrix.py:10: ValueError: spmatrix_create: invalid arguments
+/home/dtsd/DTSD/dIoTspmatrix_52755/spmatrix.py:10: ValueError: spmatrix_create: invalid arguments
+/home/dtsd/DTSD/dIoTspmatrix_52755/spmatrix.py:49: ValueError: spmatrix_value_set: invalid arguments
+/home/dtsd/DTSD/pytest_spmatrix_pub.py:84: assert 1.0 == 0.0
+============================== slowest durations ===============================
+
+(63 durations < 1s hidden.  Use -vv to show these durations.)
+========================= 4 failed, 17 passed in 0.01s =========================

@@ -1,0 +1,20 @@
+============================= test session starts ==============================
+collecting ... collected 12 items
+
+pytest_position_pub.py::test_position_create_valid_1_2 PASSED            [  8%]
+pytest_position_pub.py::test_position_create_valid_1000_0 PASSED         [ 16%]
+pytest_position_pub.py::test_position_create_invalid_args_minus1 PASSED  [ 25%]
+pytest_position_pub.py::test_position_create_invalid_args_emptytuple PASSED [ 33%]
+pytest_position_pub.py::test_position_is_true PASSED                     [ 41%]
+pytest_position_pub.py::test_position_is_false PASSED                    [ 50%]
+pytest_position_pub.py::test_position_row PASSED                         [ 58%]
+pytest_position_pub.py::test_position_col PASSED                         [ 66%]
+pytest_position_pub.py::test_position_equal_same PASSED                  [ 75%]
+pytest_position_pub.py::test_position_equal_different PASSED             [ 83%]
+pytest_position_pub.py::test_position_str PASSED                         [ 91%]
+pytest_position_pub.py::test_position_12 PASSED                          [100%]
+
+============================== slowest durations ===============================
+
+(36 durations < 1s hidden.  Use -vv to show these durations.)
+============================== 12 passed in 0.01s ==============================
