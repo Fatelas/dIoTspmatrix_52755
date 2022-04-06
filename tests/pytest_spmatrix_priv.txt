@@ -2,7 +2,7 @@
 collecting ... collected 46 items
 
 pytest_spmatrix_priv.py::test_spmatrix_01 PASSED                         [  2%]
-pytest_spmatrix_priv.py::test_spmatrix_02 FAILED                         [  4%]
+pytest_spmatrix_priv.py::test_spmatrix_02 PASSED                         [  4%]
 pytest_spmatrix_priv.py::test_spmatrix_03 PASSED                         [  6%]
 pytest_spmatrix_priv.py::test_spmatrix_04 PASSED                         [  8%]
 pytest_spmatrix_priv.py::test_spmatrix_05 PASSED                         [ 10%]
@@ -31,11 +31,11 @@ pytest_spmatrix_priv.py::test_spmatrix_27 FAILED                         [ 58%]
 pytest_spmatrix_priv.py::test_spmatrix_28 PASSED                         [ 60%]
 pytest_spmatrix_priv.py::test_spmatrix_29 PASSED                         [ 63%]
 pytest_spmatrix_priv.py::test_spmatrix_30 PASSED                         [ 65%]
-pytest_spmatrix_priv.py::test_spmatrix_31 PASSED                         [ 67%]
-pytest_spmatrix_priv.py::test_spmatrix_32 FAILED                         [ 69%]
+pytest_spmatrix_priv.py::test_spmatrix_31 FAILED                         [ 67%]
+pytest_spmatrix_priv.py::test_spmatrix_32 PASSED                         [ 69%]
 pytest_spmatrix_priv.py::test_spmatrix_33 PASSED                         [ 71%]
 pytest_spmatrix_priv.py::test_spmatrix_34 PASSED                         [ 73%]
-pytest_spmatrix_priv.py::test_spmatrix_35 FAILED                         [ 76%]
+pytest_spmatrix_priv.py::test_spmatrix_35 PASSED                         [ 76%]
 pytest_spmatrix_priv.py::test_spmatrix_36 PASSED                         [ 78%]
 pytest_spmatrix_priv.py::test_spmatrix_37 PASSED                         [ 80%]
 pytest_spmatrix_priv.py::test_spmatrix_38 PASSED                         [ 82%]
@@ -49,14 +49,12 @@ pytest_spmatrix_priv.py::test_spmatrix_45 PASSED                         [ 97%]
 pytest_spmatrix_priv.py::test_spmatrix_46 FAILED                         [100%]
 
 =================================== FAILURES ===================================
-/home/dtsd/DTSD/dIoTspmatrix_52755/spmatrix.py:14: IndexError: list index out of range
 /home/dtsd/DTSD/pytest_spmatrix_priv.py:150: assert ((10000000, 1...00, 10000000)) == ()
-/home/dtsd/DTSD/pytest_spmatrix_priv.py:184: assert 2e-14 == (99999999999998.0 / 100000000000000.0)
-/home/dtsd/DTSD/pytest_spmatrix_priv.py:209: assert 0.08333333333333333 == ((24 - 2) / 24.0)
-/home/dtsd/DTSD/dIoTspmatrix_52755/spmatrix.py:49: ValueError: spmatrix_value_set: invalid arguments
+/home/dtsd/DTSD/pytest_spmatrix_priv.py:177: assert 0.0 == 1.0
+/home/dtsd/DTSD/dIoTspmatrix_52755/spmatrix.py:58: ValueError: spmatrix_value_set: invalid arguments
 /home/dtsd/DTSD/dIoTspmatrix_52755/spmatrix.py:10: ValueError: spmatrix_create: invalid arguments
-/home/dtsd/DTSD/dIoTspmatrix_52755/spmatrix.py:49: ValueError: spmatrix_value_set: invalid arguments
+/home/dtsd/DTSD/dIoTspmatrix_52755/spmatrix.py:58: ValueError: spmatrix_value_set: invalid arguments
 ============================== slowest durations ===============================
 
 (138 durations < 1s hidden.  Use -vv to show these durations.)
-========================= 7 failed, 39 passed in 0.03s =========================
+========================= 5 failed, 41 passed in 0.03s =========================

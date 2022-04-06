@@ -8,28 +8,28 @@
        8      4     42      2       8 position_equal@37-44@position.py
        5      2     44      1       5 position_str@47-51@position.py
        5      2     36      1       5 spmatrix_create@6-10@spmatrix.py
-       5      4     43      1       5 spmatrix_is@13-17@spmatrix.py
-       5      2     27      1       5 spmatrix_zero_get@20-24@spmatrix.py
-       9      5     71      2       9 spmatrix_zero_set@27-35@spmatrix.py
-       5      3     41      2       5 spmatrix_value_get@38-42@spmatrix.py
-       5      4     49      3       5 spmatrix_value_set@45-49@spmatrix.py
-       5      2     38      1       5 spmatrix_copy@52-56@spmatrix.py
-      21      8    146      1      21 spmatrix_dim@59-79@spmatrix.py
-      12      3     92      1      12 spmatrix_sparsity@82-93@spmatrix.py
-      21      8    151      2      23 spmatrix_str@96-118@spmatrix.py
-      10      5     90      2      10 spmatrix_row@121-130@spmatrix.py
-      10      5     90      2      10 spmatrix_col@133-142@spmatrix.py
-      24      8    186      1      24 spmatrix_diagonal@145-168@spmatrix.py
+      14      9    112      1      14 spmatrix_is@13-26@spmatrix.py
+       5      2     27      1       5 spmatrix_zero_get@29-33@spmatrix.py
+       9      5     71      2       9 spmatrix_zero_set@36-44@spmatrix.py
+       5      3     41      2       5 spmatrix_value_get@47-51@spmatrix.py
+       5      4     49      3       5 spmatrix_value_set@54-58@spmatrix.py
+       5      2     38      1       5 spmatrix_copy@61-65@spmatrix.py
+      21      8    146      1      21 spmatrix_dim@68-88@spmatrix.py
+      12      3     96      1      12 spmatrix_sparsity@91-102@spmatrix.py
+      21      8    151      2      23 spmatrix_str@105-127@spmatrix.py
+      10      5     90      2      10 spmatrix_row@130-139@spmatrix.py
+      10      5     90      2      10 spmatrix_col@142-151@spmatrix.py
+      24      8    186      1      24 spmatrix_diagonal@154-177@spmatrix.py
 2 file analyzed.
 ==============================================================
 NLOC    Avg.NLOC  AvgCCN  Avg.token  function_cnt    file
 --------------------------------------------------------------
      39       6.3     3.7       44.2         6     position.py
-    139      10.5     4.5       81.5        13     spmatrix.py
+    148      11.2     4.9       87.2        13     spmatrix.py
 
 ===============================================================================================================
 No thresholds exceeded (cyclomatic_complexity > 15 or length > 1000 or nloc > 1000000 or parameter_count > 100)
 ==========================================================================================
 Total nloc   Avg.NLOC  AvgCCN  Avg.token   Fun Cnt  Warning cnt   Fun Rt   nloc Rt
 ------------------------------------------------------------------------------------------
-       178       9.2     4.3       69.7       19            0      0.00    0.00
+       187       9.7     4.5       73.6       19            0      0.00    0.00
