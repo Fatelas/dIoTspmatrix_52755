@@ -122,10 +122,10 @@ def test_spmatrix_sparsity_of_m2x2_diagonal_matrix():
 
 def test_spmatrix_sparsity_of_matrix_with_1_element_after_element_removal_using_spmatrix_zero_set():
     mat = spmatrix_create()
-    spmatrix_value_set(mat, position_create(1, 2), 12.5)
-    spmatrix_value_set(mat, position_create(2, 1), 5.0)
+    spmatrix_value_set(mat, position_create(1,2), 12.5)
+    spmatrix_value_set(mat, position_create(2,1), 5.0)
     spmatrix_zero_set(mat, 12.5)
-    assert spmatrix_sparsity(mat) == 1.0
+    assert spmatrix_sparsity(mat) == 0.0
 
 
 def test_spmatrix_str_of_m2x2_diagonal():

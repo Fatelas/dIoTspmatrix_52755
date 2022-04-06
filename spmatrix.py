@@ -11,8 +11,17 @@ def spmatrix_create(zero: float = 0.0) -> spmatrix:
 
 
 def spmatrix_is(mat: spmatrix) -> bool:
-    if type(mat) is list and type(mat[1]) is dict and type(mat[0]) is float:
-        return True
+    if type(mat) is list and len(mat) == 2:
+        if type(mat[1]) is dict and type(mat[0]) is float:
+            if len(mat[1]) != 0:
+                for item in list(mat[1].items()):
+                    if not (position_is(item[0])) or not (type(item[1]) is float):
+                        return False
+                return True
+            else:
+                return True
+        else:
+            return False
     else:
         return False
 
@@ -34,7 +43,7 @@ def spmatrix_zero_set(mat: spmatrix, zero: float):
     else:
         raise ValueError('spmatrix_zero_set: invalid arguments')
 
-# meu isto n e suposto verificar se a posicao sequer existe yo? retorna o que se tiver dentro da range meu?
+
 def spmatrix_value_get(mat: spmatrix, pos: position) -> float:
     if spmatrix_is(mat) and position_is(pos):
         return mat[1].get(pos)
@@ -78,7 +87,7 @@ def spmatrix_dim(mat: spmatrix) -> [tuple[position, position], ()]:
     else:
         raise ValueError('spmatrix_dim: invalid arguments')
 
-# perguntar se a sparsity é 1 quando a dimensao é 0 e o numero de elementos é 0
+
 def spmatrix_sparsity(mat: spmatrix) -> float:
     if spmatrix_is(mat):
         dim = spmatrix_dim(mat)
@@ -86,7 +95,7 @@ def spmatrix_sparsity(mat: spmatrix) -> float:
             dim_min = dim[0]
             dim_max = dim[1]
             area = (position_row(dim_max) - position_row(dim_min) + 1) * (position_col(dim_max) - position_col(dim_min) + 1)
-            return len(mat[1]) / float(area)
+            return (area - len(mat[1])) / float(area)  # sparsity = null elements / dimension
         else:
             return 0  # perguntar se a sparsity é 1 quando a dimensao é 0 e o numero de elementos é 0
     else:
@@ -166,3 +175,6 @@ def spmatrix_diagonal(mat: spmatrix) -> [spmatrix, ...]:
             return new_mat
     else:
         raise ValueError('spmatrix_diagonal: invalid arguments')
+
+
+#project made by fatelas
