@@ -15,7 +15,7 @@ def spmatrix_is(mat: spmatrix) -> bool:
         if type(mat[1]) is dict and type(mat[0]) is float:
             if len(mat[1]) != 0:
                 for item in list(mat[1].items()):
-                    if not (position_is(item[0])) or not (type(item[1]) is float):
+                    if not (position_is(item[0]) and type(item[1]) is float):
                         return False
                 return True
             else:
