@@ -97,7 +97,7 @@ def spmatrix_sparsity(mat: spmatrix) -> float:
             area = (position_row(dim_max) - position_row(dim_min) + 1) * (position_col(dim_max) - position_col(dim_min) + 1)
             return (area - len(mat[1])) / float(area)  # sparsity = null elements / dimension
         else:
-            return 0  # perguntar se a sparsity é 1 quando a dimensao é 0 e o numero de elementos é 0
+            return 1  # perguntar se a sparsity é 1 quando a dimensao é 0 e o numero de elementos é 0
     else:
         raise ValueError('spmatrix_sparsity: invalid arguments')
 
