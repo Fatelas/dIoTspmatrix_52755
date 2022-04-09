@@ -15,7 +15,7 @@ def spmatrix_is(mat: spmatrix) -> bool:
         if type(mat[1]) is dict and type(mat[0]) is float:
             if len(mat[1]) != 0:
                 for item in list(mat[1].items()):
-                    if not (position_is(item[0]) and type(item[1]) is float):
+                    if not (position_is(item[0]) and type(item[1]) is float and item[1] != mat[0]):
                         return False
                 return True
             else:
@@ -46,14 +46,21 @@ def spmatrix_zero_set(mat: spmatrix, zero: float):
 
 def spmatrix_value_get(mat: spmatrix, pos: position) -> float:
     if spmatrix_is(mat) and position_is(pos):
-        return mat[1].get(pos)
+        if mat[1].get(pos) is not None:
+            return mat[1].get(pos)
+        else:
+            return mat[0]
     else:
         raise ValueError('spmatrix_value_get: invalid arguments')
 
 
 def spmatrix_value_set(mat: spmatrix, pos: position, val: float):
     if spmatrix_is(mat) and position_is(pos) and type(val) is float:
-        mat[1][pos] = val
+        #aux_dict = mat[1]
+        if val != mat[0]:
+            mat[1][pos] = val
+        else:
+            mat[1].pop(pos)
     else:
         raise ValueError('spmatrix_value_set: invalid arguments')
 
@@ -165,7 +172,7 @@ def spmatrix_diagonal(mat: spmatrix) -> [spmatrix, ...]:
                     for y in range(position_col(dim_min), position_col(dim_max) + 1):
                         if x == y:
                             value = spmatrix_value_get(mat, position_create(x, y))
-                            if value is not None:
+                            if value is not None and value != mat[0]:
                                 new_mat[1][position_create(x, y)] = value
                 return new_mat
             else:
